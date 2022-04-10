@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    #container
+    {
+        text-align: center;
+    }
+    #body
+    {
+        background-color:  #33ccff;
+    }
+    .image
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:  150px;
+    }
+    .popup-container
+    {
+        background-color: rgba(0,0,0,0.3);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .popup
+    {
+        background-color: #2980b9;
+        border-radius: 5px;
+        box-shadow: 0 15px 10px 3px rgba(0,0,0,0.1);
+        padding: 20px;
+        text-align: center;
+    }
+    .popup button
+    {
+    cursor: pointer;
+    background-color: #fff;
+    color: #2980b9;
+    border: 0;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    }
+
+    .popup button:active{
+        transform: scale(0.98);
+    }
+
+    .popup button:focus{
+        outline: 0;
+    }
+    .btn1
+    {
+    position: absolute;
+    top: 390px;
+    right:1100px;
+    transform: translate(-50%-50%);
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    text-align: center;
+    }
+
+    .btn2
+    {
+    position: absolute;
+    top: 340px;
+    right: 840px;
+    transform: translate(-50%-50%);
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    text-align: center;
+    }
+
+    .btn3
+    {
+    position: absolute;
+    top: 470px;
+    right:900px;
+    transform: translate(-50%-50%);
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    text-align: center;
+    }
+
+    .btn4
+    {
+    position: absolute;
+    top: 460px;
+    right:700px;
+    transform: translate(-50%-50%);
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    text-align: center;
+    }
+
+    .btn5
+    {
+    position: absolute;
+    top: 560px;
+    right:800px;
+    transform: translate(-50%-50%);
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    text-align: center;
+    }
+
+</style>
+<body id = "body">
+    <h1 style="text-align: center;">Name</h1>
+    <div id="container">
+        <button id = "Howto" class="btn">How To</button>
+        <button onclick="window.location.href='main.html'">Home</button>
+    </div>
+    <button onclick="window.location.href='frontal_lobe.html'" class="btn1">
+        <font>1</font>
+    </button>
+    <button onclick="window.location.href='parietal_lobe.html'" class="btn2">
+        <font>2</font>
+    </button>
+    <button onclick="window.location.href='temporal_lobe.html'" class="btn3">
+        <font>3</font>
+    </button>
+    <button onclick="window.location.href='occipital-lobe.html'" class="btn4">
+        <font>4</font>
+    </button>
+    <button onclick="window.location.href='cerebellum.html'" class="btn5">
+        <font>5</font>
+    </button>
+    <img src="https://media.discordapp.net/attachments/962205427716751440/962337666211381268/brain.png?width=756&height=540" 
+    width="650vw"
+    height="400vh"
+    class = "image">
+    <div class="popup-container" id="popup-container">
+        <div class="popup">
+            <h2 id="message"></h2>
+            <button id="back">Back</button>
+        </div>
+    </div>
+    <script src="page2.js"></script>
+</body>

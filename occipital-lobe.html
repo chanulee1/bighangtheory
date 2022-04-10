@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <style>
+    .center {
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    body {
+        background-image: url('dna.jpg');
+        background-repeat: no-repeat;
+        background-size: 1920px 1080px;
+        background-attachment: fixed;
+                  
+    }
+    .image{
+        position: relative;
+        left:530px;
+        top:150px;
+    }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Hangman</title>
+        <link href="stylespopup.css" rel="stylesheet">
+        <script defer src="scripts.js"></script>
+    </head>
+    <body>
+        <h1 style="text-align: center; color: honeydew">Name</h1>
+        <div class="center">
+          <button onclick="history.back();">Back</button>
+        </div>
+        <div>
+            <img src="Pics/occipital-lobe.png" class="image">
+        </div>
+
+        <button data-modal-target="#modal" class="position">Fun Fact!</button>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="title">Occipital Lobe Fun Fact</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+        <div class="modal-body">
+            -Processes visual information, such as differentiating and identifying the things we see
+        </div>
+        </div>
+     <div id="overlay"></div>
+     <div>
+        <button onclick="window.location.href='occipital_hangman.html'"  class="position2">Start!</button>
+    </div>
+
+
+
+    </body>
+    
+</html>
